@@ -20,5 +20,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Generate Release
-      run: dotnet publish 
-
+      run: dotnet publish -r win-x64
