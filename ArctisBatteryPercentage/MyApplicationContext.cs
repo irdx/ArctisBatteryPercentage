@@ -107,7 +107,7 @@ class MyApplicationContext : ApplicationContext
             _ => Color.FromArgb(CalculateRed(value), CalculateGreen(value), 0)
         };
 
-        using var fontToUse = new Font("Microsoft Sans Serif", value == 100 ? 10 : 16, FontStyle.Regular, GraphicsUnit.Pixel);
+        using var fontToUse = new Font("Consolas", value == 100 ? 10 : 16, FontStyle.Regular, GraphicsUnit.Pixel);
         using var brushToUse = new SolidBrush(color);
         using var bitmapText = new Bitmap(16, 16);
         using var g = Graphics.FromImage(bitmapText);
